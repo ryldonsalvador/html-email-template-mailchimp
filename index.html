@@ -1,7 +1,520 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="format-detection" content="telephone=no">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+     <!--[if gt mso 15]>
+     <style type="text/css" media="all">
+     /* Outlook 2016 Height Fix */
+     table, tr, td {border-collapse: collapse;}
+     tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+     </style>
+     <![endif]-->
+  <style type="text/css">
+  	@import url(http://fonts.googleapis.com/css?family=Roboto:700);
+  	@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+	/*table, tr, td {border-collapse: collapse;}
+ 	tr { font-size:0px; line-height:0px; border-collapse: collapse; }*/
+		/* Some resets and issue fixes */
+        #outlook a { padding:0; }
+        body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }     
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass {width:100%;} 
+        .backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
+        table td {border-collapse: collapse;}
+        .ExternalClass * {line-height: 115%;}           
+        /* End reset */
+  	body {
+		margin: 0;
+		padding: 0;
+		font-family: Roboto, Verdana, sans-serif;
+		background-color: #ffffff; 
+	}
+	table {
+        border: 0px;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    img {
+        border: 0;
+        /*height: auto;*/
+        /*line-height: 100%;*/
+        outline: none;
+        text-decoration: none;
+        display: block;
+    }
+    .content-1{
+    	/*padding-top: 160px;*/
+    	background-color: #f2f0e9;
+    	width: 90%;
+    	/*height: 200px;*/
+    	display: inline-block;
+    }
+    .content-1-title{
+    	color: #5c352a;
+		font-size: 25px;
+    	line-height: 30px;
+    	font-weight: bold;
+    	padding-top: 30px;
+    }
+    .content-1-details{
+    	color: #2b2b2b;
+	    font-size: 12px;
+    	line-height: 20px;
+    	padding: 0 25px 40px;
+    	font-weight: normal;
+    	text-align: justify;
+    }
+    .calendar-bg{
+    	max-width: 120px;
+    	width: 120px;
+    	height: 85px;
+    	background-size: cover;
+    	display: block;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+    }
+    #text-with-design{
+    	text-decoration: underline;
+    	color: #a6ae8f;
+    }
+	.customcolor1{
+		color: #a6ae8f;
+	}
+	.customcolor1:visited {
+		color: #a6ae8f;
+	}
+	.customcolor1:hover, .customcolor1:active, .customcolor1:focus {
+		color:#a6ae8f;
+	}
+	.customcolor2{
+		color: #2b2b2b;
+		text-decoration: none;
+	}
+	.customcolor2:visited {
+		color: #2b2b2b;
+		text-decoration: none;
+	}
+	.customcolor2:hover, .customcolor2:active, .customcolor2:focus {
+		color:#2b2b2b;
+		text-decoration: none;
+	}
+	.huntPlan,.fb,.ins:visited {
+		color: #757575;
+	}
+	.huntPlan,.fb,.ins:hover, .huntPlan,.fb,.ins:active, .huntPlan,.fb,.ins:focus {
+		color: #757575;
+	}
+	.hero {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #ffffff00;
+	}
+    /*Desktop*/
+    
+    @media only screen and (min-width: 630px) {
+		td[class=column] {
+	    	width: 50% !important;   
+	    }
+	    td[class=profilepic] {
+	    	width: 50% !important;   
+	    }
+		td[class=column_calender] {
+	    	width: 30% !important;   
+	    }
+    }
+
+    /*Mobile*/
+
+    @media only screen and (max-width: 620px) {
+    	table[class=main]{
+    		width: 100% !important;
+    	}
+    	 td[class=override_main] {
+            min-width: 100% !important;
+        }
+        td[class=column] {
+            width: 100% !important;
+            display: block !important;
+        }
+        td[id=classwithId] {
+        	padding-bottom: 0px !important	
+        }
+        table[class=two-columns]{
+    		width: 82% !important;
+    	}
+    	table[class=two-columns-icons]{
+    		width: 25% !important;
+    	}
+    	table[class=section_4_content_columns]{
+    		width:100% !important;
+    	}
+    	.pClass{
+    		padding: 25px 10px 10px 10px !important;
+    		text-align: center !important;
+    	}
+    	.pClass-calendar,.pClass-calendar-bottom-text{
+    		padding: 15px 10px 15px 10px !important;
+    		text-align: center !important;
+    	}
+    	.pClassList {
+		    padding: 0px 0px 0px 0px !important;
+		    text-align: center !important;
+    	}
+    	.logo,.content-1-image,.content-3-image{
+    		padding-right: 0 !important;
+    		padding-left: 0 !important;
+    	}
+    	.calendar-bg{
+    		width: 100px !important;
+    		height: 80px !important;
+    	}
+    }
+	@media only screen and (max-width: 500px) {
+    	.hero{
+	    	background-size: auto !important;
+    	    background-position: -200px top !important;
+    	}
+    	.hero-image-holder{
+    		height: 80px !important;
+    	}
+	}
+ 	@media only screen and (max-width: 450px) {
+    	.top{
+    		padding-top: 40px !important;
+    		padding-bottom: 50px !important;
+    	}
+ 	}
+    @media only screen and (max-width: 350px) {
+    	.calendar-bg{
+		    width: 85px !important;
+    		height: 75px !important;
+    	}
+    	.pClass-calendar{
+    		font-size: 25px !important;
+    		padding: 15px 10px 15px 10px !important;
+    	}
+    }
+
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<table class="main" background="images/bg.png" width="650" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tbody>
+			<!----------------------------------------------- HEADER LOGO  ----------------------------------------->
+			<tr>
+				<td class="top" valign="top" align="center" style="padding-top: 80px; padding-bottom: 50px;">
+					<a href="" target="_blank" style="text-decoration: none;">
+						<img style="max-width:130px; display: inline-block;" mc:edit="logo" class="logo" src="images/Logo.jpg" alt="" />
+					</a>
+				</td>
+			</tr>
+			<!----------------------------------------------- HEADER LOGO  END ------------------------------------->
+			<!------------------------------------------------------------------------------------------------------>
+			<!----------------------------------------------- HERO SECTION ----------------------------------------->
+			<tr>
+				<td mc:edit="hero" class="hero" width="650" height="248" valign="center" align="center" style="border-collapse: collapse; padding: 0 0 30px 0;">
+					<div class="hero-image-holder" style="height:120px; width:100%; display: block;">
+						<img style="width:100%; height: auto; display: block;" class="" src="images/hero.jpg" alt="" />
+					</div>
+					<table align="center" border=0; cellspacing=0 cellpadding=0 style="width: 90%; background-color: #f2f0e9">
+						<tr>
+						<td align="center" border=0; cellspacing=0 cellpadding=0 style="display:inline-block;padding: 0 0 30px 0;width: 100%; background-color: #f2f0e9">
+							<p class="content-1-title">Lorem ipsum dolor sit <br> amet elit</p>	
+							<p class="content-1-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor. Morbi bibendum fringilla ante, a consequat libero facilisis vitae. Donec ornare tellus quis massa eleifend, et auctor elit lobortis. Nulla convallis neque a ipsum blandit, at maximus diam tincidunt. Donec lobortis, sem a dictum interdum, mi odio finibus nulla, non accumsan risus nibh non urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mattis dictum.</p>	
+						</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- HERO SECTION END -------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SECTION 1 --------------------------------------------->
+			<tr>
+				<td width="650" class="override_main section_1" mc:edit="section_1" style=" padding: 40px 0 40px 0; margin: 0px; vertical-align: top;">
+	                <table align="center" class="two-columns" cellspacing=0 cellpadding=0 style="width: 100%; background-color: #ffffff00;">
+	                    <tr>
+	                        <td class="column" align="center" style="border-collapse: collapse;">
+	                        	<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: left; padding-left: 70px; color: #243838; line-height: 30px;">Lorem ipsum dolor sit amet</p>
+	                        	<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; padding-top: 20px; color: #5c352a; line-height: 30px;">Vildtlog og indberetning</p>
+	                       		<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; color: #5c352a; line-height: 30px;">Begivenheder</p>
+	                       		<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; color: #5c352a; line-height: 30px;">Gruppers jagtudbytte</p>
+	                       		<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; color: #5c352a; line-height: 30px;">Gruppens kalender</p>
+	                       		<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; color: #5c352a; line-height: 30px;">Jagttider</p>
+	                       		<p class="pClassList" style="margin:0; font-size:12px; font-weight: normal; text-align: left; padding-left: 70px; color: #5c352a; line-height: 30px;">Afskydningsplaner</p>
+	                       		<p class="pClassList" style="margin:0; font-size:10px; font-weight: normal; text-align: left; padding-left: 70px; color: #2b2b2b; line-height: 30px;"><a class="customcolor2" href="" target="_blank">&#43; Se flere features i appen</p>
+	                        </td>
+	                        <td class="column" align="center" style="border-collapse: collapse;">
+	                           <img style="max-width: 260px; padding-right: 50px; padding-top: 65px;" class="content-1-image" src="images/content-image1.png" alt="" />
+	                        </td>
+	                    </tr>
+	                </table>
+                </td>
+			</tr>
+			<!----------------------------------------------- SECTION 1 END ----------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SECTION 1 --------------------------------------------->
+			<tr>
+				<td width="650" class="override_main section_2" mc:edit="section_2" style=" padding: 0px 0 40px 0; margin: 0px; vertical-align: top;">
+					<table align="center" class="two-columns" cellspacing=0 cellpadding=0 style="width: 100%; background-color: #ffffff00;">
+						<tr>
+							<td class="column" align="center" style="border-collapse: collapse;">
+								<img style="max-width: 280px; padding-left: 20px; padding-top: 10px;" class="content-2-image" src="images/content-image2.jpg" alt="" />
+							</td>
+							<td class="column" align="center" style="border-collapse: collapse;">
+								<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: left; padding: 25px 80px 10px 25px;color: #243838; line-height: 30px;">Lorem ipsum dolor sit amet</p>
+								<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding: 20px 50px 0 25px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- SECTION 2 END ----------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SECTION 3 --------------------------------------------->
+			<tr>
+				<td width="650" class="override_main section_3" mc:edit="section_3" style=" padding: 0px 0 40px 0; margin: 0px; vertical-align: top;">
+					<table align="center" class="two-columns" cellspacing=0 cellpadding=0 style="width: 100%; background-color: #ffffff00;">
+						<tr>
+							<td class="column" align="center" style="border-collapse: collapse;">
+								<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: left; padding: 25px 25px 10px 55px; color: #243838; line-height: 30px;">Lorem ipsum dolor sit amet</p>
+								<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 55px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis 
+								</p>
+							</td>
+							<td class="column" align="center" style="border-collapse: collapse;">
+								<img style="max-width: 280px; padding-right: 20px; padding-top: 10px;" class="content-3-image" src="images/content-image3.jpg" alt="" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- SECTION 3 END ----------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SECTION 4 WITH 1 TEXT BOXs----------------------------->
+			<tr>
+				<td width="650" class="override_main" style="padding: 0px 0 50px 0; margin: 0px; vertical-align: top;">
+					<table border=0; align="center" cellspacing=0 cellpadding=0 style="width: 90%;background-color: #f2f0e9; border-collapse: collapse;">
+						<tbody>
+							<tr>
+								<td width="650" class="override_main" style="  margin: 0px; vertical-align: top;padding-bottom: 50px;">
+									<table mc:repeatable="section_4_content" border=0; align="left" class="section_4_content_columns" cellspacing=0 cellpadding=0 style="width: 50%; border-collapse: collapse;">
+										<tr>
+											<td mc:edit="section_4_inner_1" class="" align="center" style="border-collapse: collapse; padding-top: 40px;">
+												<p class="pClass" style="margin:0; font-size:16px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 19px;">Lorem ipsum dolor sit amet</p>
+												<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table mc:repeatable="section_4_content" border=0; align="left" class="section_4_content_columns" cellspacing=0 cellpadding=0 style="width: 50%; border-collapse: collapse;">
+										<tr>
+											<td mc:edit="section_4_inner_2" class="column" align="center" style="border-collapse: collapse; padding-top: 40px;">
+												<p class="pClass" style="margin:0; font-size:16px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 19px;">Lorem ipsum dolor sit amet</p>
+												<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table mc:repeatable="section_4_content" border=0; align="left" class="section_4_content_columns" cellspacing=0 cellpadding=0 style="width: 50%; border-collapse: collapse;">
+										<tr>
+											<td mc:edit="section_4_inner_3" class="column" align="center" style="border-collapse: collapse; padding-top: 40px;">
+												<p class="pClass" style="margin:0; font-size:16px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 19px;">Lorem ipsum dolor sit amet</p>
+												<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table mc:repeatable="section_4_content" border=0; align="left" class="section_4_content_columns" cellspacing=0 cellpadding=0 style="width: 50%; border-collapse: collapse;">
+										<tr>
+											<td mc:edit="section_4_inner_4" class="column" align="center" style="border-collapse: collapse; padding-top: 40px;">
+												<p class="pClass" style="margin:0; font-size:16px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 19px;">Lorem ipsum dolor sit amet</p>
+												<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.
+												</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>	
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- SECTION 4 END ----------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SECTION 5 WITH 1 TEXT BOX ----------------------------->
+			<tr>
+				<td width="650" class="override_main section_5_content" style=" padding: 0px 0 40px 0; margin: 0px; vertical-align: top;">
+					<table align="center" mc:repeatable="section_5_content" class="two-rows" cellspacing=0 cellpadding=0 border=0 style="width: 90%;background-color: #f2f0e9;">
+						<tr>
+							<td mc:edit="section_5_inner_1" class="row" align="center" style="border-collapse: collapse; padding-top: 50px;">
+								<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 30px;">Lorem ipsum dolor sit amet</p>
+								<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor. 
+								</p>
+							</td>
+						</tr>
+					</table>
+					<table align="center" mc:repeatable="section_5_content" class="two-rows" cellspacing=0 cellpadding=0 border=0 style="width: 90%;background-color: #f2f0e9;">
+						<tr>
+							<td mc:edit="section_5_inner_2" class="row" align="center" style="border-collapse: collapse; padding-top: 50px; padding-bottom: 75px;">
+								<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: left; padding: 25px 25px 10px 40px; color: #243838; line-height: 30px;">Lorem ipsum dolor sit amet</p>
+								<p class="pClass" style="margin:0;font-size:12px; font-weight: normal; text-align: left; padding:20px 25px 10px 40px; color: #5c352a; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor. 
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- SECTION 5 END ----------------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- TESTIMONIAL MESSAGE SECTION --------------------------->
+			<tr>
+				<td width="650" class="override_main testimonials_message" mc:edit="testimonials_message" style=" padding: 0px 0 0px 0; margin: 0px; vertical-align: top;">
+					<table align="center" class="two-rows" cellspacing=0 cellpadding=0 border=0 style="width: 90%;">
+						<tr>
+							<td class="row" align="center" style="border-collapse: collapse;">
+								<p class="pClass" style="margin:0; font-size:25px; font-weight: bold; text-align: center; padding: 25px 0px 10px 0px; color: #243838; line-height: 30px;">Lorem ipsum</p>
+								<p class="pClass" style="margin:0;font-size:9px; font-weight: normal; text-align: center; padding:20px 80px 10px 80px; color: #2b2b2b; line-height: 15px;">”Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas eros convallis justo pellentesque auctor. Suspendisse hendrerit metus vitae eros aliquet, in finibus enim sagittis. Sed lectus neque, dictum quis viverra ac, fringilla vel dolor.”
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- TESTIMONIAL MESSAGE SECTION END ----------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- TESTIMONIAL PROFILE SECTION --------------------------->
+			<tr>
+				<td width="650" class="override_main testimonials_profile" mc:edit="testimonials_profile" style="padding: 0px 0 40px 0; margin: 0px; vertical-align: top;">
+					<table align="center" class="two-rows" cellspacing=0 cellpadding=0 border=0 style="width: 90%;">
+						<tr>
+                            <td class="profilepic" align="right" style="border-collapse: collapse; padding-top: 10px; padding-bottom: 0px;">
+                                <img style="max-width: 75px; padding-right: 15px; padding-top: 0px;" class="profile-pic" src="images/picture.png" alt="" />
+                                
+                            </td>
+                            <td class="profilename" align="left" style="border-collapse: collapse; padding-top: 10px; padding-bottom: 0px; ">
+                                <p style="font-size: 9px; color: #2b2b2b; padding-top: 6px; margin: 0;">Anders Andersen</p>
+                                <p style="font-size: 8px; color: #757575; margin: 0;">Randers</p>
+                            </td>
+                        </tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- TESTIMONIAL MESSAGE SECTION END ----------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- CALENDAR SECTION -------------------------------------->
+			<tr>
+				<td border=0 width="650" class="override_main calendar" mc:edit="calendar" style=" padding: 0px 0 0px 0; margin: 0px; vertical-align: top; border-collapse: collapse;">
+					<table border="0" align="center" class="two-rows" cellspacing=0 style="width: 90%; background-color: #243838;">
+						<tbody>
+							<tr>
+								<td border=0 width="650" class="override_main" style="border-collapse: collapse;  padding: 0px 0 0px 0; margin: 0px; vertical-align: top;">
+									<table align="center" class="two-rows" border="0" cellpadding="0" cellspacing="0" style="width: 90%; background-color: #243838;">
+										<tr>
+											<td border=0 class="row" align="center" style="border-collapse: collapse;">
+												<p class="pClass-calendar" style="margin:0; font-size:25px; font-weight: bold; text-align: center; padding: 50px 140px 30px 140px; color: #a6ae8f; line-height: 30px;">Lorem ipsum dolor sit amet elit</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td style="border-collapse:collapse;">
+		                      		<table align="center" border="0" cellpadding="0" cellspacing="0" class="two-rows" style="width:40%;background-color:#243838;">
+			                        	<tbody>
+			                          	<tr>
+			                            	<td align="center" class="column_calender" style="border-collapse:collapse;padding:0 5px 0 0;">
+			                              	<p class="pClass-calendar" dir="rtl" style="margin:0px;font-size:30px;font-weight:normal;padding:25px 40px 25px 40px;color:rgb(92, 53, 42);line-height:36px;background-image:url('https://mcusercontent.com/04b6a6ffe3a4323507c563df3/images/30eb6838-f6d3-45de-8461-ac67c904e357.jpg');background-size:cover;">01</p	>
+			                            	</td>
+			                            	<td align="center" class="column_calender" style="border-collapse:collapse;padding:0 5px 0 0;">
+			                              		<p class="pClass-calendar" dir="rtl" style="margin:0px;font-size:30px;font-weight:normal;padding:25px 40px 25px 40px;color:rgb(92, 53, 42);line-height:36px;background-image:url('https://mcusercontent.com/04b6a6ffe3a4323507c563df3/images/ba3004bb-e53f-4146-9221-397bc5e75521.jpg');background-size:cover;">Juli</p>
+			                            	</td>
+			                            	<td align="center" class="column_calender" style="border-collapse:collapse;padding:0 0 0 0;">
+			                              		<p class="pClass-calendar" dir="rtl" style="margin:0px;font-size:30px;font-weight:normal;padding:25px 40px 25px 40px;color:rgb(92, 53, 42);line-height:36px;background-image:url('https://mcusercontent.com/04b6a6ffe3a4323507c563df3/images/e6c100c9-7e5a-4527-8ac0-0c00ad0722a7.jpg');background-size:cover;">2020</p>
+			                            	</td>
+			                          	</tr>
+			                        </tbody>
+			                      </table>
+			                    </td>
+							</tr>
+							<tr>
+								<td width="650" border="0" class="override_main" style="border-collapse: collapse;  padding: 0px 0 0px 0; margin: 0px; vertical-align: top;">
+									<table border="0" align="center" class="two-rows" cellspacing=0 cellpadding=0 style="border-collapse: collapse; width: 90%; background-color: #243838;">
+										<tr>
+											<td class="row" align="center" style="border-collapse: collapse;">
+												<p class="pClass-calendar-bottom-text" style="margin:0; font-size:10px; font-weight: normal; text-align: center; padding: 30px 100px 50px 100px; color: #ffffff; line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis in quam quis egestas. Fusce elementum ex turpis, at accumsan massa euismod non.</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>	
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- CALENDAR SECTION END ---------------------------------->
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- FOLLOW SECTION ---------------------------------------->
+			<tr>
+				<td width="650" class="override_main follow" mc:edit="follow" style=" padding: 0px 0 0px 0; margin: 0px; vertical-align: top;">
+					<table border="0" align="center" class="two-rows" cellspacing=0 cellpadding=0 style="width: 90%; background-color: #ffffff00;">
+						<tr>
+							<td class="row" align="center" style="border-collapse: collapse;">
+								<p class="pClass" style="margin:0; font-size:16px; font-weight: bold; text-align: center; padding: 30px 100px 20px 100px; color: #243838; line-height: 19px;">Følg HuntPlan</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!----------------------------------------------- FOLLOW SECTION END ------------------------------------>
+			<!------------------------------------------------------------------------------------------------------->
+			<!----------------------------------------------- SOCIAL SECTION ----------------------------------------->
+			<tr>
+            	<td width="400" class="override_main social" mc:edit="social" style="padding: 0px 0 30px 0; margin: 0px; vertical-align: top;">
+                    <table align="center" class="two-columns-icons" cellspacing=0 cellpadding=0 style="width: 20%; background-color: #ffffff00;">
+                        <tr>
+                            <td class="column-icons" align="center" style="border-collapse: collapse; padding-right: 20px;">
+                                <a class="huntPlan" href="" target="_blank" style="text-decoration: none; margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">
+                                	<img style="max-width: 20px; padding-right: 0; padding-top: 10px;" class="fb" src="images/huntplan-mini-logo.jpg" alt="" />
+                                	<p style="margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">HuntPlan</p>
+                            	</a>
+                            </td>
+                            <td class="column-icon" align="center" style="border-collapse: collapse; padding-right: 20px;">
+                                <a class="fb" href="https://www.facebook.com/" target="_blank" style="text-decoration: none; margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">
+                                	<img style="max-width: 20px; padding-right: 0; padding-top: 10px;" class="fb" src="images/fb.png" alt="" />
+                                	<p style="margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">Facebook</p>
+                            	</a>
+                            </td>
+                            <td class="column-icon" align="center" style="border-collapse: collapse;">
+                            	<a class="ins" href="https://www.instagram.com/" target="_blank" style="text-decoration: none;margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">
+                                	<img style="max-width: 20px; padding-right: 0; padding-top: 10px;" class="fb" src="images/instagram.png" alt="" />
+                                	<p style="margin:0; font-weight: normal;font-size: 8px; color: #757575; padding-top: 5px;">Instagram</p>
+                            	</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!----------------------------------------------- SOCIAL SECTION END ------------------------------------>
+			<!------------------------------------------------------------------------------------------------------->	
+            <!----------------------------------------------- FOOTER SECTION ---------------------------------------->
+			<tr>
+				<td width="650" class="override_main footer" style=" padding: 0px 0 50px 0; margin: 0px; vertical-align: top;">
+					<table border="0" align="center" class="two-rows" cellspacing=0 cellpadding=0 style="width: 90%; background-color: #ffffff00;">
+						<tr>
+							<td class="row" align="center" mc:edit="footer" style="border-collapse: collapse;">
+								<p class="pClass" style="margin:0; font-size:8px; font-weight: normal; text-align: center; padding: 30px 80px 20px 80px; color: #000000; line-height: 19px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis in quam quis egestas. Fusce elementum ex turpis, at accumsan massa euismod non. Ut nisi arcu, sollicitudin at imperdiet at, gravida nec turpis. Cras mauris leo, lacinia quis est sed, congue fringilla quam. Suspendisse in arcu commodo, vulputate mauris eu, posuere lorem. Donec tincidunt nisi sed metus ultricies scelerisque id sit amet ipsum. Nunc <span id="text-with-design"><a class="customcolor1" href="" target="_blank">tempor</a></span> elementum egestas. Nam tempus congue lorem in vulputate. Quisque augue eros, efficitur at velit eu, ornare mattis nisl. Quisque elementum <span id="text-with-design"><a class="customcolor1" href="" target="_blank">pretium porttitor.</a></span></p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>	
+			<!----------------------------------------------- FOOTER SECTION END ------------------------------------>
+			<!------------------------------------------------------------------------------------------------------->	
+		</tbody>
+	</table>
 </body>
 </html>
